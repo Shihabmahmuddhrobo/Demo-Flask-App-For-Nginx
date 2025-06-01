@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<h1>Choose your drink: </h1>
+		<ul>
+		{% for dr in drink %}
+		<li><a href="/drink/{{dr}}">{{ dr }}</a></li>
+		{% endfor %}
+
+		</ul>
+	</body>
+</html>
+
+

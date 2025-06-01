@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     drinks = ['Coffee','Tea','Milkshake']
-    returm render_templete('index.html',drink=drinks)
+    return render_template('index.html',drink=drinks)
 
 @app.route('/drink/<dr>')
 
